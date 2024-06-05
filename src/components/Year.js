@@ -7,6 +7,5 @@ export const Year = () => {
 		console.log(t.getFullYear());
 		return t.getFullYear();
 	}
-
-	return render();
+	return <div>{render()}</div>;
 };
