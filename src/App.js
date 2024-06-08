@@ -40,14 +40,9 @@ export const App = () => {
 				Текущее значение <code>value</code>: "
 				<output className={styles['current-value']}>{value}</output>"
 			</p>
-			{error !== '' ? <div className={styles.error}>{error}</div> : ''}
+			{error !== '' && <div className={styles.error}>{error}</div>}
 			<div className={styles['buttons-container']}>
-				<button
-					onClick={() => {
-						onInputButtonClick();
-					}}
-					className={styles.button}
-				>
+				<button onClick={onInputButtonClick} className={styles.button}>
 					Ввести новое
 				</button>
 				<button
