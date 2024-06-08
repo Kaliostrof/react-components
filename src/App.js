@@ -46,9 +46,7 @@ export const App = () => {
 					Ввести новое
 				</button>
 				<button
-					onClick={() => {
-						onAddButtonClick();
-					}}
+					onClick={onAddButtonClick}
 					className={styles.button}
 					disabled={!isValueValid}
 				>
